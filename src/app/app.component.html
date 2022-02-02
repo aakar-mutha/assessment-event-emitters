@@ -1,0 +1,39 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="login-form">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <input
+          type="text"
+          placeholder="Email or Username"
+          class="input"
+          formControlName="name"
+        /><br />
+        <input
+          type="password"
+          placeholder="Password"
+          class="input"
+          formControlName="password"
+        /><br />
+        <button class="btn" type="submit">log in</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- ------------------------------------------------------------ -->
+<div class="wrapper">
+  <button class="btn" type="button" (click)="onClick()">Click Me</button>
+</div>
+<!-- ------------------------------------------------------------ -->
+<div class="wrapper">
+  <div class="login-form">
+    <h3 class="input">{{bellring}}</h3>
+    <input
+      type="text"
+      placeholder="Enter Value"
+      class="input"
+      [(ngModel)]="formData"
+    /><br />
+    <button class="btn" type="submit" (click)="onButtonClick()">Submit</button>
+  </div>
+</div>
+<app-fileupload></app-fileupload>

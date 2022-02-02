@@ -1,0 +1,37 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="login-form">
+      <button class="btn" type="button" (click)="onNumberClick()">Click</button>
+    </div>
+    <div class="login-form">
+        <label for="">MaxListeners Before: </label>
+        <h3 class="input">{{maxListnersBefore}}</h3>
+        <label for="">MaxListeners After: </label>
+        <h3 class="input">{{maxListnmaxListnersAfter}}</h3>
+        <button class="btn" type="button" (click)="getMaxListners()">Get Max Listerns</button>
+      </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="container">
+    <div class="login-form">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <input
+          type="number"
+          placeholder="Enter Number Of Listeners"
+          class="input"
+          formControlName="number"
+        /><br />
+        <div class="login-form">
+          <label for="">MaxListeners Before: </label>
+          <h3 class="input">{{maxListnersBefore1}}</h3>
+          <label for="">MaxListeners After: </label>
+          <h3 class="input">{{maxListnmaxListnersAfter1}}</h3>
+        </div>
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<br>
+<br>
